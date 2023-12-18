@@ -1,0 +1,107 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+main{
+    height:100vh;
+    width:100vw;
+    background-image: url('https://img.freepik.com/free-vector/halftone-background-with-circles_23-2148907689.jpg?t=st=1702896089~exp=1702896689~hmac=ac84d6e1502b7b4742b6c22bc7cae0523d2f6d304d60bb13d5dcd0bb606d20de');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(100%), contrast(800%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container{
+    /* height: 74vh; */
+    width:30vw;
+    background-color: #fff;
+    border-radius: 2rem;
+    overflow: hidden;
+    padding:1rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* filter: blur(10px); */
+}
+#inpCont{
+    height:8vh;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.7rem;
+
+}
+input{
+    height: 100%;
+    width: 80%;
+    padding-left: 1rem;
+    border-radius: 1rem;
+    border: 1px solid lightgray;
+    outline: none;
+    /* background-color: lightgray; */
+}
+#btnCont{
+    /* height:55vh; */
+    width:90%;
+    /* background-color: #ccc; */
+    margin-top: 0.7rem;
+    display: grid;
+    /* justify-content: center;
+    align-items: center; */
+    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-items: center;
+    /* overflow: hidden; */
+}
+#diffCol{
+    color:rgb(35, 35, 240);
+}
+.btn{
+    color:#000;
+    /* background-color: blueviolet; */
+    /* width:25%;
+    height:15%; */
+    /* border:0.1rem solid #000; */
+    border-radius: 50%;
+    /* line-height:20%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.6rem;
+    margin: 0.1em;
+    transition: all ease 0.7s;
+    font-weight: 600;
+}
+.btn:hover{
+    background-color: #a5f019;
+}
+
+@media(max-width:650px){
+    #container{
+        width: 100vw;
+        height:100vh;
+        align-items: flex-start;
+        border-radius:0;
+    }
+    #inpCont{
+        width:100%;
+        height:20%;
+    }
+    input{
+        height:40%;
+    }
+    #btnCont{
+        width:100%;
+        height:80%;
+    }
+}
